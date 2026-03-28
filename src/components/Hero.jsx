@@ -434,39 +434,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2 }}
-        style={{
-          position: 'absolute',
-          bottom: 40,
-          left: '50%',
-          transform: 'translateX(-50%)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          gap: 8,
-        }}
-      >
-        <span style={{ color: '#64748b', fontSize: '0.75rem', fontWeight: 500, letterSpacing: 2, textTransform: 'uppercase' }}>Scroll</span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-          style={{
-            width: 24,
-            height: 40,
-            borderRadius: 12,
-            border: '2px solid rgba(100, 116, 139, 0.4)',
-            display: 'flex',
-            justifyContent: 'center',
-            paddingTop: 8,
-          }}
-        >
-          <div style={{ width: 3, height: 8, borderRadius: 3, background: '#3b82f6' }} />
-        </motion.div>
-      </motion.div>
 
       {/* Responsive styles */}
       <style>{`
